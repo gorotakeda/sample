@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+<h2>詳細ページ</h2>
+  <%= render @test_blog %>
+  <%= link_to "編集", edit_test_blog_path %>
+  <%= button_to "削除", test_blog_path, method: :delete %>
+</div>
+
+<%= link_to "戻る", test_blogs_path %>

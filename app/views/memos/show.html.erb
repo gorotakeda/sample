@@ -1,0 +1,7 @@
+<h2>詳細ページ</h2>
+<div>
+ <%= render @memo %>
+  <%= link_to "編集ページ", edit_memo_path(@memo) %>
+  <%= button_to "メモ削除", memo_path, method: :delete %>
+</div>
+<%= link_to "一覧ページへ戻る", memos_path %>

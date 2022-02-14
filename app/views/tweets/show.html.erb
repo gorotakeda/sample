@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+<h2>詳細</h2>
+<div>
+  <%= render @tweet %>
+  <%= link_to "edit", edit_tweet_path %>
+  <%= button_to "dstoroy", tweet_path, method: :delete %>
+</div>
+<%= link_to "戻る", tweets_path %>

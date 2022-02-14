@@ -1,0 +1,8 @@
+<h2>詳細ページ</h2>
+<%= render @diary %>
+  <div>
+  <%= link_to "編集ページ", edit_diary_url %>
+  <%= button_to "削除", diary_path, method: :delete %>
+  <%= link_to "トップページ", diaries_path %>
+  </div>
+

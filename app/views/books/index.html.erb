@@ -1,0 +1,8 @@
+<h2>ブック一覧</h2>
+  <% @books.each do |book| %>
+      <%= render book %>
+    <div>
+      <%= link_to "詳細", book %>
+    </div>
+  <% end %>
+<%= link_to "新しい本", new_book_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+<h2>note</h2>
+<% @notes.each do |note| %>
+  <%= render note %>
+  <div>
+    <%= link_to "詳細", note %>
+  </div>
+<% end %>
+
+<%= link_to "新しいnote", new_note_path %>

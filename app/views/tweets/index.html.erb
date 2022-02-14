@@ -1,0 +1,10 @@
+<p style="color :green"><%= notice %></p>
+<div>
+  <h2>Tweet</h2>
+    <% @tweets.each do |tweet| %>
+      <%= render tweet %>
+      <%= link_to "show", tweet %>
+    <% end %>
+</div>
+<br>
+<%= link_to "new_tweet", new_tweet_path %>

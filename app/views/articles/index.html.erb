@@ -1,0 +1,15 @@
+
+<p style="color: green"><%= notice %></p>
+
+<div>ここでは日々のブログを掲載しています。</div>
+
+<div class="articles">
+  <% @articles.each do |article| %>
+    <%= render article %>
+    <p>
+     <%= link_to "詳細", article %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "新しいBLOGを投稿する", new_article_path%>

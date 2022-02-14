@@ -1,0 +1,9 @@
+<h2>ブログ掲示板</h2>
+<div id="memo">
+<% @memos.each do |memo| %>
+ <%= render memo %>
+<%= link_to "詳細ページ", memo %>
+<% end %>
+
+</div>
+<%= link_to "新しいメモ", new_memo_path %>

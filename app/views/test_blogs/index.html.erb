@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+<h2>テストブログ</h2>
+<% @test_blogs.each do |test_blog| %>
+  <%= render test_blog %>
+<div>
+  <%= link_to "詳細", test_blog %>
+</div>
+<% end %>
+
+<%= link_to "NewBlog", new_test_blog_path %>

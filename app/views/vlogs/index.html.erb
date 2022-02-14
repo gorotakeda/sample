@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+<h2>VLOG</h2>
+<% @vlogs.each do |vlog| %>
+ <%= render vlog %>
+  <p>
+  <%= link_to "詳細", vlog %>
+  </p>
+<% end %>
+<%= link_to "新しい投稿", new_vlog_path %>

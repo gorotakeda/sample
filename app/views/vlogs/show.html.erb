@@ -1,0 +1,8 @@
+<p style="color: green" ><%= notice %></p>
+<h2>詳細ページ</h2>
+<%= render @vlog %>
+  <p>
+  <%= link_to "編集", edit_vlog_path %>
+  <%= button_to "削除", vlog_path, method: :delete %>
+  </p>
+<%= link_to "戻る", vlogs_path %>

@@ -1,0 +1,13 @@
+<%= form_with(model: vlog) do |form| %>
+<div>
+  <%= form.label :title, style: "disply: block" %>
+  <%= form.text_field :title %>
+</div>
+<div>
+  <%= form.label :body, style: "disply: block" %>
+  <%= form.text_area :body %>
+</div>
+<div>
+  <%= form.submit %>
+</div>
+<% end %>

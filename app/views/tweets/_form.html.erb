@@ -1,0 +1,11 @@
+<%= form_with(model: @tweet) do |form| %>
+  <div>
+    <%= form.label :title, style: "disply :block" %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :body, style: "disply :block" %>
+    <%= form.text_area :body %>
+  </div>
+  <%= form.submit %>
+<% end %>
