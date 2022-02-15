@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2022_02_11_211400) do
   create_table "tweets", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.integer "user_id", null: false
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_tweets_on_user_id"
