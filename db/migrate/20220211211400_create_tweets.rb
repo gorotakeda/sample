@@ -10,6 +10,12 @@ class CreateTweets < ActiveRecord::Migration[7.0]
       t.references :user, foreign_key: true
       t.timestamps
     end
+    create_table :profiles do |t|
+      t.string :name
+      t.integer :age
+      t.references :user, foreign_key: true
+      t.timestamps
+    end
   end
 end
 

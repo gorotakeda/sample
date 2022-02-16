@@ -54,6 +54,15 @@ ActiveRecord::Schema.define(version: 2022_02_11_211400) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
   create_table "test_blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -83,5 +92,6 @@ ActiveRecord::Schema.define(version: 2022_02_11_211400) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "profiles", "users"
   add_foreign_key "tweets", "users"
 end
